@@ -1,0 +1,82 @@
+2018-05-20 15:39:04.766  INFO 9002 --- [restartedMain] com.aotubuy.ShopApplication              : Starting ShopApplication on luke-pavilion-notebook with PID 9002 (/home/luke/IdeaProjects/shop/target/classes started by luke in /home/luke/IdeaProjects/shop)
+2018-05-20 15:39:04.768  INFO 9002 --- [restartedMain] com.aotubuy.ShopApplication              : No active profile set, falling back to default profiles: default
+2018-05-20 15:39:04.908  INFO 8805 --- [restartedMain] com.aotubuy.ShopApplication              : Starting ShopApplication on luke-pavilion-notebook with PID 8805 (/home/luke/IdeaProjects/shop/target/classes started by luke in /home/luke/IdeaProjects/shop)
+2018-05-20 15:39:04.908  INFO 8805 --- [restartedMain] com.aotubuy.ShopApplication              : No active profile set, falling back to default profiles: default
+2018-05-20 15:39:05.578  INFO 8805 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-20 15:39:05.579  INFO 8805 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-20 15:39:05.627  INFO 8805 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-20 15:39:06.297  INFO 8805 --- [restartedMain] com.aotubuy.ShopApplication              : Started ShopApplication in 1.438 seconds (JVM running for 146.809)
+2018-05-20 15:39:07.404  INFO 9002 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-20 15:39:07.404  INFO 9002 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-20 15:39:07.413  INFO 9002 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/home/luke/idea-IU-145.1617.8/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-05-20 15:39:07.494  INFO 9002 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-20 15:39:08.805  WARN 9002 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2018-05-20 15:39:08.859 ERROR 9002 --- [restartedMain] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.aotubuy.ShopApplication.main(ShopApplication.java:17) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_91]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_91]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_91]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_91]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	... 18 common frames omitted
+Caused by: java.net.BindException: 地址已在使用
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_91]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	... 19 common frames omitted
+
+2018-05-20 15:39:08.864  INFO 9002 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-05-20 15:39:08.877 ERROR 9002 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-05-20 15:39:54.271  INFO 9227 --- [restartedMain] com.aotubuy.ShopApplication              : Starting ShopApplication on luke-pavilion-notebook with PID 9227 (/home/luke/IdeaProjects/shop/target/classes started by luke in /home/luke/IdeaProjects/shop)
+2018-05-20 15:39:54.272  INFO 9227 --- [restartedMain] com.aotubuy.ShopApplication              : No active profile set, falling back to default profiles: default
+2018-05-20 15:39:55.956  INFO 9227 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-20 15:39:55.957  INFO 9227 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-20 15:39:55.966  INFO 9227 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/home/luke/idea-IU-145.1617.8/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-05-20 15:39:56.052  INFO 9227 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-20 15:39:57.569  INFO 9227 --- [restartedMain] com.aotubuy.ShopApplication              : Started ShopApplication in 3.626 seconds (JVM running for 6.263)
+2018-05-20 15:40:03.969  INFO 9227 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-20 15:40:04.032  INFO 9227 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-20 15:40:04.258  INFO 9227 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-20 15:40:04.290 DEBUG 9227 --- [http-nio-8080-exec-1] c.a.D.D.selectIndexTopBannerAd           : ==>  Preparing: select * from doll_ad WHERE pid=2 limit 1 
+2018-05-20 15:40:04.297 DEBUG 9227 --- [http-nio-8080-exec-1] c.a.D.D.selectIndexTopBannerAd           : ==> Parameters: 
+2018-05-20 15:40:04.312 DEBUG 9227 --- [http-nio-8080-exec-1] c.a.Dao.DollAdMapper.selectPositionToAd  : ====>  Preparing: select position_id as adp_position_id, position_name AS adp_position_name, ad_width AS adp_ad_width, ad_height AS adp_ad_height, position_desc as adp_position_desc, is_open as adp_is_open, position_style as adp_position_style from doll_ad_position where position_id = ? 
+2018-05-20 15:40:04.312 DEBUG 9227 --- [http-nio-8080-exec-1] c.a.Dao.DollAdMapper.selectPositionToAd  : ====> Parameters: 2(Integer)
+2018-05-20 15:40:04.314 DEBUG 9227 --- [http-nio-8080-exec-1] c.a.Dao.DollAdMapper.selectPositionToAd  : <====      Total: 1
+2018-05-20 15:40:04.314 DEBUG 9227 --- [http-nio-8080-exec-1] c.a.D.D.selectIndexTopBannerAd           : <==      Total: 1
